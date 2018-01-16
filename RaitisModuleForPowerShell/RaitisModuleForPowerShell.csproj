@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>6df5c98b-d17b-4090-a70c-129a9e762de6</ProjectGuid>
+    <ProjectGuid>{6DF5C98B-D17B-4090-A70C-129A9E762DE6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RaitisModuleForPowerShell</RootNamespace>
@@ -30,24 +30,62 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="Microsoft.PowerShell.Commands.Management, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.Commands.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerShell.Commands.Utility, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.Commands.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerShell.Commands.Utility.resources, Version=3.0.0.0, Culture=ja, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=MSIL">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.Commands.Utility.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerShell.ConsoleHost, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.ConsoleHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerShell.ConsoleHost.resources, Version=3.0.0.0, Culture=ja, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=MSIL">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.ConsoleHost.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerShell.Security, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerShell.Security.resources, Version=3.0.0.0, Culture=ja, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=MSIL">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\Microsoft.PowerShell.Security.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management.Automation.resources, Version=3.0.0.0, Culture=ja, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=MSIL">
+      <HintPath>C:\Windows\System32\WindowsPowerShell\v1.0\SDK\System.Management.Automation.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Audio\MMDeviceAPI\AudioEndpointVolume.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\CLSCTX.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\EDataFlow.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\ERole.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IAudioEndpointVolume.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IMMDevice.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IMMDeviceEnumerator.cs" />
+    <Compile Include="Audio\MMDeviceAPI\MMDevice.cs" />
+    <Compile Include="Audio\MMDeviceAPI\MMDeviceEnumerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Audio\GetAudioLevel.cs" />
+    <Compile Include="Audio\SetAudioLevel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
