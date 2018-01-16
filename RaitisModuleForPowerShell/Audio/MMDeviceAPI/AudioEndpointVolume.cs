@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using RaitisModuleForPowerShell.Volume.Interface;
+using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Interface;
 
 // ReSharper disable UnusedMember.Global
 

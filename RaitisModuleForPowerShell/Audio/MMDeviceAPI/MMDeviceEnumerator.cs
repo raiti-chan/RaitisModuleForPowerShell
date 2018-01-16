@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations;
-using RaitisModuleForPowerShell.Volume.Interface;
+using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Interface;
 
 namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI {
 	[ComImport, Guid("BCDE0395-E52F-467C-8E3D-C4579291692E")]
