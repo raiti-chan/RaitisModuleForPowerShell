@@ -1,6 +1,6 @@
 ﻿using System.Management.Automation;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Enumerations;
 
 namespace RaitisModuleForPowerShell.Audio {
 

@@ -1,7 +1,8 @@
 ﻿using System;
+
 // ReSharper disable UnusedMember.Global
 
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Enumerations {
 	[Flags]
 	public enum EDeviceState : uint {
 		DEVICE_STATE_ACTIVE      = 0x00000001,

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Interface;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Enumerations;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Interface;
 
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI {
 	[ComImport, Guid("BCDE0395-E52F-467C-8E3D-C4579291692E")]
 	internal class _MMDeviceEnumerator { }
 

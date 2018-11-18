@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E4BAFA6-7511-4100-B0AB-28D9C8003397}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaitisLibraryForPowerShell</RootNamespace>
+    <AssemblyName>RaitisLibraryForPowerShell</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\MMDeviceAPI\AudioEndpointVolume.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\CLSCTX.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\EDataFlow.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\EDeviceState.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Enumerations\ERole.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IAudioEndpointVolume.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IMMDevice.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IMMDeviceCollection.cs" />
+    <Compile Include="Audio\MMDeviceAPI\Interface\IMMDeviceEnumerator.cs" />
+    <Compile Include="Audio\MMDeviceAPI\MMDevice.cs" />
+    <Compile Include="Audio\MMDeviceAPI\MMDeviceEnumerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

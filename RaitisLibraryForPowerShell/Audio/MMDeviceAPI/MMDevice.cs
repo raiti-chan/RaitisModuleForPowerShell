@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Interface;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Enumerations;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Interface;
 
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI {
 	public class MMDevice : IDisposable{
 		private readonly IMMDevice _realDevice;
 
@@ -25,13 +25,13 @@ namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI {
 				return this._audioEndpointVolume;
 			}
 		}
-		
-		internal MMDevice(IMMDevice realDevice) {
-			this._realDevice = realDevice;
-		}
-		
+
+		internal MMDevice(IMMDevice realDevice) => this._realDevice = realDevice;
+
 		public void Dispose() {
-			if (_realDevice != null) Marshal.ReleaseComObject(_realDevice);
+			if (this._realDevice != null) {
+				Marshal.ReleaseComObject(this._realDevice);
+			}
 		}
 	}
 }

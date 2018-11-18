@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 // ReSharper disable UnusedMember.Global
 
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI.Interface {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Interface {
 	[Guid("5CDF2C82-841E-4546-9722-0CF74078229A"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 	public interface IAudioEndpointVolume {
 		[PreserveSig]

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using RaitisModuleForPowerShell.Audio.MMDeviceAPI.Interface;
+using RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Interface;
 
 // ReSharper disable UnusedMember.Global
 
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI {
 	public class AudioEndpointVolume : IDisposable {
 		private readonly IAudioEndpointVolume _audioEndpointVolume;
 

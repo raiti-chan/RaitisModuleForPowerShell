@@ -1,5 +1,5 @@
 ﻿// ReSharper disable UnusedMember.Global
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Enumerations {
 	public enum ERole {
 		eConsole = 0,
 		eMultimedia = 1,

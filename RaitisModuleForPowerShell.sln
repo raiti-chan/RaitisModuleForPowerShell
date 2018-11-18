@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaitisModuleForPowerShell", "RaitisModuleForPowerShell\RaitisModuleForPowerShell.csproj", "{6DF5C98B-D17B-4090-A70C-129A9E762DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaitisLibraryForPowerShell", "RaitisLibraryForPowerShell\RaitisLibraryForPowerShell.csproj", "{1E4BAFA6-7511-4100-B0AB-28D9C8003397}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6DF5C98B-D17B-4090-A70C-129A9E762DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF5C98B-D17B-4090-A70C-129A9E762DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF5C98B-D17B-4090-A70C-129A9E762DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4BAFA6-7511-4100-B0AB-28D9C8003397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4BAFA6-7511-4100-B0AB-28D9C8003397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4BAFA6-7511-4100-B0AB-28D9C8003397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4BAFA6-7511-4100-B0AB-28D9C8003397}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

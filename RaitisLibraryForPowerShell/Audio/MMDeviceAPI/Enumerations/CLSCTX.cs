@@ -2,7 +2,7 @@
 
 // ReSharper disable UnusedMember.Global
 
-namespace RaitisModuleForPowerShell.Audio.MMDeviceAPI.Enumerations {
+namespace RaitisLibraryForPowerShell.Audio.MMDeviceAPI.Enumerations {
 	[Flags]
 	public enum CLSCTX {
 		INPROC_SERVER = 0x1,
